@@ -7,16 +7,19 @@
   <meta name="description" content="Official website for Zambian artist Mbamwene Hlangano Mlotshwa — music, Kopavents, MHM2WENTY1NE and Mbabz AI." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;600;700;800;900&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="site-glow"></div>
+  <div class="color-orb orb-one"></div>
+  <div class="color-orb orb-two"></div>
+  <div class="color-orb orb-three"></div>
 
   <nav class="nav">
     <a class="brand" href="index.html">MBAMWENE</a>
     <div class="nav-links">
       <a href="#music">Music</a>
+      <a href="#gallery">Images</a>
       <a href="#mbabz-ai">Mbabz AI</a>
       <a href="#kopavents">Kopavents</a>
       <a href="#mhm">MHM2WENTY1NE</a>
@@ -26,35 +29,75 @@
 
   <main>
     <section class="hero">
-      <p class="eyebrow">Official Artist Site</p>
-      <h1>Mbamwene</h1>
-      <p class="full-name">Mbamwene Hlangano Mlotshwa</p>
-      <p class="tagline">Artist. Visionary. Creator of worlds.</p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="https://audiomack.com/mbamwene" target="_blank" rel="noopener">Listen Now</a>
-        <a class="btn btn-ghost" href="#mbabz-ai">Meet Mbabz AI</a>
+      <div class="hero-copy">
+        <p class="eyebrow">Official Artist Site</p>
+        <h1>Mbamwene</h1>
+        <p class="full-name">Mbamwene Hlangano Mlotshwa</p>
+        <p class="tagline">Afro sound. Rap confidence. Premium world-building.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://audiomack.com/mbamwene" target="_blank" rel="noopener">Listen Now</a>
+          <a class="btn btn-ghost" href="#gallery">View Gallery</a>
+          <a class="btn btn-dark" href="#mbabz-ai">Mbabz AI</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="portrait-frame">
+          <img src="assets/images/artist-main.jpg" alt="Mbamwene artist portrait" onerror="this.src='https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=900&q=80'" />
+        </div>
+        <div class="floating-card streams">
+          <strong>25K+</strong>
+          <span>Account plays</span>
+        </div>
+        <div class="floating-card vibe">
+          <strong>Afrosounds</strong>
+          <span>Kitwe, Zambia</span>
+        </div>
       </div>
     </section>
 
-    <section id="music" class="section two-col">
-      <div>
+    <section id="music" class="section music-section">
+      <div class="section-intro">
         <p class="section-kicker">Music</p>
-        <h2>The sound of the Mbamwene universe.</h2>
-        <p>Afro sounds, rap energy, late-night emotion and Copperbelt confidence. This is where fans connect with the records, visuals and stories behind the music.</p>
-        <a class="text-link" href="https://audiomack.com/mbamwene" target="_blank" rel="noopener">Open Audiomack →</a>
+        <h2>Tracks, visuals and moments built for replay.</h2>
+        <p>Step into the Mbamwene universe — Afro sounds, rap energy, late-night emotion and Copperbelt confidence.</p>
       </div>
-      <div class="cards">
-        <article class="card"><span>01</span><h3>Latest Drops</h3><p>Singles, freestyles, collaborations and upcoming projects.</p></article>
-        <article class="card"><span>02</span><h3>Visual Rollouts</h3><p>Teasers, cover art, reels and short-form content for every release.</p></article>
-        <article class="card"><span>03</span><h3>Fan Journey</h3><p>Turn listeners into real supporters through stories and community.</p></article>
+      <div class="music-grid">
+        <article class="music-card hot">
+          <img src="assets/images/cover-art-1.jpg" alt="Mbamwene cover art" onerror="this.src='https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=900&q=80'" />
+          <div><span>Featured</span><h3>Latest Drops</h3><p>Singles, freestyles and collaborations.</p></div>
+        </article>
+        <article class="music-card">
+          <img src="assets/images/cover-art-2.jpg" alt="Mbamwene music visual" onerror="this.src='https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=900&q=80'" />
+          <div><span>Visuals</span><h3>Music Videos</h3><p>Performance clips, trailers and visualizers.</p></div>
+        </article>
+        <article class="music-card">
+          <img src="assets/images/cover-art-3.jpg" alt="Mbamwene playlist cover" onerror="this.src='https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=900&q=80'" />
+          <div><span>Playlists</span><h3>Mbamwene Essentials</h3><p>The records fans should start with.</p></div>
+        </article>
+      </div>
+      <a class="text-link" href="https://audiomack.com/mbamwene" target="_blank" rel="noopener">Open Audiomack →</a>
+    </section>
+
+    <section id="gallery" class="section gallery-section">
+      <div class="section-intro">
+        <p class="section-kicker">Image Gallery</p>
+        <h2>Artist visuals with premium energy.</h2>
+        <p>Upload your real photos into <strong>assets/images</strong> using the file names below and the site will automatically show them.</p>
+      </div>
+      <div class="gallery-grid">
+        <img class="gallery-tall" src="assets/images/artist-portrait.jpg" alt="Artist portrait" onerror="this.src='https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=crop&w=900&q=80'" />
+        <img src="assets/images/lifestyle-1.jpg" alt="Artist lifestyle" onerror="this.src='https://images.unsplash.com/photo-1508973379184-7517410fb0bc?auto=format&fit=crop&w=900&q=80'" />
+        <img src="assets/images/studio-session.jpg" alt="Studio session" onerror="this.src='https://images.unsplash.com/photo-1520170350707-b2da59970118?auto=format&fit=crop&w=900&q=80'" />
+        <img class="gallery-wide" src="assets/images/performance.jpg" alt="Live performance" onerror="this.src='https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=1200&q=80'" />
       </div>
     </section>
 
     <section id="mbabz-ai" class="section ai-panel">
       <div class="ai-copy">
         <p class="section-kicker">Mbabz AI</p>
-        <h2>Your digital assistant inside the Mbamwene world.</h2>
-        <p>Mbabz AI is the smart assistant being built to help fans discover music, find events, explore the clothing brand and eventually support promotion, research and creative tasks.</p>
+        <h2>The digital assistant inside the Mbamwene world.</h2>
+        <p>Mbabz AI is a premium fan and productivity assistant being built to help people discover music, find events, explore merch and support music promotion.</p>
         <div class="ai-pills">
           <span>Music Guide</span>
           <span>Event Helper</span>
@@ -65,30 +108,32 @@
       <div class="chat-card">
         <div class="chat-header"><span></span><strong>Mbabz AI</strong><em>preview</em></div>
         <div class="chat-body">
-          <p class="bot">Yo, welcome to the official Mbamwene hub. What are we doing today?</p>
-          <p class="user">Find me music, events and merch.</p>
-          <p class="bot">Say less. I can guide fans to songs, Kopavents updates and MHM2WENTY1NE drops.</p>
+          <p class="bot">Welcome to Mbamwene’s official universe. What are we doing today?</p>
+          <p class="user">Show me music, events and merch.</p>
+          <p class="bot">I’ll guide you to songs, Kopavents updates, visuals and MHM2WENTY1NE drops.</p>
         </div>
         <button class="chat-button" type="button">Live AI coming soon</button>
       </div>
     </section>
 
-    <section id="kopavents" class="section split-card">
+    <section id="kopavents" class="section brand-feature kopavents-card">
       <div>
         <p class="section-kicker">Kopavents</p>
         <h2>Events, culture and nightlife energy.</h2>
         <p>Kopavents connects the music to real-life experiences — link ups, performances, parties, pop-ups and youth culture moments.</p>
+        <a class="btn btn-primary" href="https://instagram.com/kopavents" target="_blank" rel="noopener">Follow Kopavents</a>
       </div>
-      <a class="btn btn-primary" href="https://instagram.com/kopavents" target="_blank" rel="noopener">Follow Kopavents</a>
+      <img src="assets/images/kopavents-flyer.jpg" alt="Kopavents event flyer" onerror="this.src='https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=900&q=80'" />
     </section>
 
-    <section id="mhm" class="section split-card gold-card">
+    <section id="mhm" class="section brand-feature mhm-card">
       <div>
         <p class="section-kicker">MHM2WENTY1NE</p>
-        <h2>Clothing brand. Street identity. Artist lifestyle.</h2>
-        <p>MHM2WENTY1NE is the fashion side of the movement — built around premium Afro-urban confidence, clean visuals and limited drops.</p>
+        <h2>Fashion brand. Street identity. Artist lifestyle.</h2>
+        <p>MHM2WENTY1NE is the fashion side of the movement — premium Afro-urban confidence, clean visuals and limited drops.</p>
+        <a class="btn btn-ghost" href="shop.html">View Brand</a>
       </div>
-      <a class="btn btn-ghost" href="shop.html">View Brand</a>
+      <img src="assets/images/mhm2wenty1ne-brand.jpg" alt="MHM2WENTY1NE clothing brand" onerror="this.src='https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=900&q=80'" />
     </section>
 
     <section id="contact" class="section contact">
